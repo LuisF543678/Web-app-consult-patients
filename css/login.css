@@ -1,6 +1,10 @@
 /*    --------------------------------------------------
 	:: Login Section
 	-------------------------------------------------- */
+
+    body {
+        background-color:#eeeeee8c !important;
+    }
 #login {
     padding-top: 50px
 }

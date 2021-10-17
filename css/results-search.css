@@ -8,6 +8,7 @@
   body {
     padding-top: 50px;
     font-size: .95rem !important;
+    background-color:#eeeeee8c;
   }
   .btn-grey{
       background-color:#D8D8D8;
@@ -67,3 +68,11 @@
     padding: 0px !important;
     border: 1px solid #fff !important;
   }
+
+span {
+  font-size: 10px;
+}
+
+a {
+  font-size: 15px !important;
+}

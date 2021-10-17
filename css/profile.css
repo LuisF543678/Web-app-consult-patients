@@ -1,5 +1,5 @@
 body{
-    background: #DAE3E7;
+  background-color:#eeeeee8c;
   font-family: "Roboto", sans-serif
   }
   img{
@@ -16,7 +16,7 @@ body{
   .header {
     padding: 10px 0;
     background: #f5f5f5;
-    border-top: 3px solid #3AAA64;
+    border-top: 3px solid blue;
   }
   .button-email{
     margin:10px 0
