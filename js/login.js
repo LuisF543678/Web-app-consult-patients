@@ -15,3 +15,8 @@ function showPassword() {
     }
     
 }
+
+
+function signup(){
+    location.href ="././sign-up.html";
+}
