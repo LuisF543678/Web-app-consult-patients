@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="./css/mdb.min.css" />
+</head>
+<body>
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-wrap">
+                    <h1 class="text-dark">Inicia sesión con tu correo y contraseña</h1>
+                        <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="correo@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="key" class="sr-only">Password</label>
+                                <input type="password" name="key" id="key" class="form-control" placeholder="contraseña">
+                            </div>
+                            <div class="checkbox">
+                                <span class="character-checkbox" onclick="showPassword()"></span>
+                                <span class="label">Mostrar contraseña</span>
+                            </div>
+                            <input type="submit" id="btn-login" class="btn btn-success btn-lg btn-block" value="Iniciar sesión">
+                           <div class="text-center">O</div>
+                            <input type="submit" id="btn-login" class="btn btn-primary btn-lg btn-block" value="Registrate">
+                        </form>
+                        <br>
+                        <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+                    </div>
+                </div> <!-- /.col-xs-12 -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+
+    
+</body>
+</html>
