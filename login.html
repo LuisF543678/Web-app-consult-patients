@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login 🔑</title>
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
   <!-- MDB -->
@@ -32,10 +33,9 @@
                                 <span class="character-checkbox" onclick="showPassword()"></span>
                                 <span class="label">Mostrar contraseña</span>
                             </div>
-                            <input type="submit" id="btn-login" class="btn btn-success btn-lg btn-block" value="Iniciar sesión">
+                            <a type="button" id="btn-login" class="btn btn-success btn-lg btn-block">Iniciar sesión</a>
                            <div class="text-center">O</div>
-                           <a onclick="signup()">
-                            <input type="submit" id="btn-login" class="btn btn-primary btn-lg btn-block" value="Registrate" >
+                           <a onclick="signup()" type="button" id="btn-login" class="btn btn-primary btn-lg btn-block">Registrate
                         </a>
                             
                         </form>
@@ -49,6 +49,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./js/login.js"></script>
 
-    
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="./js/mdb.min.js"></script>
 </body>
 </html>
