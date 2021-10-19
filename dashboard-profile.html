@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de opciones</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/mdb.min.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="slide-menu">
+        <ul>
+            <li class="timeline">Historial </li>
+            <hr>
+            <li class="events">Eventos</li>
+            <hr>
+            <li class="calendar">Calendario</li>
+            <hr>
+            <li class="settings">Configuración</li>
+            <hr>
+            <a href="./login.html"><li class="logout">Cerrar sesión</li></a>
+            
+        </ul>
+    </nav>
+    <!-- Content panel -->
+    <div class="container-fluid" id="content">
+        <div class="menu-trigger"></div>
+        <h1>Tus notificaciones</h1>
+        <p>Aquí veras todo lo relacionado con las consultas y tu historial </p>
+        <div class="alert alert-dismissible fade show alert-success" role="alert" data-mdb-color="warning">
+            <strong>Holy user123! </strong> En breve recibirás un mensaje con el link de la plataforma para tu consulta.
+            <button type="button" class="btn-close" data-mdb-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="row card-group">
+            <div class="col-sm-6">
+                <div class="card w-50">
+                    <div class="card-body">
+                        <img src="./img/meetlogo.png" class="img-fluid rounded" alt="" />
+                        <h5 class="card-title"> Enlace disponible </h5>
+                        <a href="#" class="btn btn-primary">Iniciar consulta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card w-50">
+                    <div class="card-body">
+                        <img src="./img/zoomlogo.png" class="img-fluid rounded" alt="" />
+                        <h5 class="card-title">...</h5>
+                        <a href="#" class="btn btn-primary">Esperando...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+        <div class="row card-group">
+            <div class="col-sm-6">
+                <div class="card w-50"  style="width: 18rem;">
+                    <div class="card-body">
+                        <img src="./img/teamslogo.png" class="img-fluid rounded" alt="" />
+                        <h5 class="card-title">...</h5>
+                        <a href="#" class="btn btn-primary">Esperando...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+</body>
+
+</html>

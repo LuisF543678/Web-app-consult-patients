@@ -4,6 +4,7 @@
 
     body {
         background-color:#eeeeee8c !important;
+        background-image: url('https://blackdoctorsusa.com/assets/images/health-insurance.png') ;
     }
 #login {
     padding-top: 50px
@@ -16,6 +17,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+    background-color: white;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
