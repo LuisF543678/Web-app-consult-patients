@@ -2,13 +2,15 @@
 	:: Login Section
 	-------------------------------------------------- */
 
-    body {
-        background-color:#eeeeee8c !important;
-        background-image: url('https://blackdoctorsusa.com/assets/images/health-insurance.png');
-    }
+body {
+    background-color:#eeeeee8c !important;
+    background-image: url('https://blackdoctorsusa.com/assets/images/health-insurance.png');
+}
+
 #login {
     padding-top: 50px
 }
+
 #login .form-wrap {
     width: 30%;
     margin: 0 auto;
@@ -22,6 +24,7 @@
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
+
 #login h1 {
     color: #1fa67b;
     font-size: 18px;
@@ -29,9 +32,11 @@
     font-weight: bold;
     padding-bottom: 20px;
 }
+
 #login .form-group {
     margin-bottom: 25px;
 }
+
 #login .checkbox {
     margin-bottom: 20px;
     position: relative;
@@ -41,6 +46,7 @@
     -o-user-select: none;
     user-select: none;
 }
+
 #login .checkbox.show:before {
     content: '\e013';
     color: #1fa67b;
@@ -50,6 +56,7 @@
     pointer-events: none;
     font-family: 'Glyphicons Halflings';
 }
+
 #login .checkbox .character-checkbox {
     width: 25px;
     height: 25px;
@@ -59,15 +66,18 @@
     vertical-align: middle;
     display: inline-block;
 }
+
 #login .checkbox .label {
     color: #6d6d6d;
     font-size: 13px;
     font-weight: normal;
 }
+
 #login .btn.btn-custom {
     font-size: 14px;
 	margin-bottom: 20px;
 }
+
 #login .forget {
     font-size: 13px;
 	text-align: center;
