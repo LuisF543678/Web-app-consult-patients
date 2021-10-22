@@ -2,13 +2,10 @@
  * General styles
  */
 
- body,
- html {
+ body, html {
    height: 100%;
    background-repeat: no-repeat;
    background-color:#eeeeee8c !important;
-   
-
  }
  
  .main {

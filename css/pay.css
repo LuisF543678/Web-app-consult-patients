@@ -2,13 +2,13 @@ html {
     height: 100%;
   }
   
-  body {
+body {
     background: #eeeeee8c;
     display: flex;
     font-family: "Montserrat", sans-serif;
     height: 100%;
     align-items: center;
-  }
+}
   
   .sub-body {
     background: #FFFFFF;

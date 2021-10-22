@@ -39,13 +39,13 @@ body{
    }
   
   
-  .label-theme{
+.label-theme{
     background: #3AAA64;
     font-size: 14px;
     padding: .3em .7em .3em;
     color: #fff;
     border-radius: .25em;
-  }
+}
   
   .label a{
     color: inherit;
