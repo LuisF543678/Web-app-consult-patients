@@ -5,7 +5,7 @@ var submit = document.querySelector('#submit');
 
 braintree.client.create({
   authorization: 'sandbox_g42y39zw_348pk9cgf3bgyw2b'
-}, function(err, client) {
+}, function (err, client) {
   if (err) {
     console.error(err);
     return;
@@ -66,7 +66,7 @@ braintree.client.create({
         placeholder: '6000'
       }
     }
-  }, function(err, hostedFields) {
+  }, function (err, hostedFields) {
     if (err) {
       console.error(err);
       return;
@@ -74,10 +74,10 @@ braintree.client.create({
 
     submit.removeAttribute('disabled');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
       event.preventDefault();
       alert('Ingresa los datos');
-      hostedFields.tokenize(function(err, payload) {
+      hostedFields.tokenize(function (err, payload) {
         if (err) {
           console.error(err);
           return;
@@ -93,11 +93,11 @@ braintree.client.create({
 
 
 // Tab selection
-$('.pay-select__item').on('click', function(){
+$('.pay-select__item').on('click', function () {
   $('.pay-select__item').removeClass('is-active');
   $(this).addClass('is-active');
-  
-  if($(this).hasClass('pay-select--card')) {
+
+  if ($(this).hasClass('pay-select--card')) {
     $('.select-body__content').removeClass('is-active');
     $('.select-body--card').addClass('is-active');
   } else {
