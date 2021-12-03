@@ -18,5 +18,5 @@ function showPassword() {
 
 
 function signup() {
-    location.href = "././sign-up.html";
+    location.href = "../patient-registration/sign-up.html";
 }
