@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Doctors</title>
+    <link rel="stylesheet" href="../assets/css/search-engine.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="search-modal">
+        <div class="search-modal-background"></div>
+        <div class="search-content-area">
+            <input name="modal-search-field" type="text" id="modal-search-field">
+            <label for="modal-search-field">Ingresa palabras clave o alguna especialidad</label>
+            <div class="search-suggestions">
+                <h4><i class="fa fa-arrow-right"></i> Algunas sugerencias 🩺</h4>
+
+                <span class="search-tag">Ginecología</span>
+                <span class="search-tag">Pediatría </span>
+                <span class="search-tag">Obstetricia</span>
+                <span class="search-tag">Medicina familiar</span>
+                <span class="search-tag">Cardiología</span>
+                <span class="search-tag">Urología</span>
+
+            </div>
+        </div>
+        <div class="search-close"><i class="fa fa-close" id="search-close-btn"></i></div>
+    </div>
+
+    <div class="content">
+        <div class="main-nav">
+            <div class="main-nav-inner">
+                <div class="main-nav-search">
+                    <i class="fa fa-search" id="main-nav-search-btn"></i>
+                </div>
+            </div>
+        </div>
+        <div class="top-box"></div>
+        <div class="twin-box">
+            <div class="twin"></div>
+            <div class="twin"></div>
+        </div>
+        <div class="full-box"></div>
+        <div class="twin-box">
+            <div class="twin"></div>
+            <div class="twin"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../assets/js/search-engine.js"></script>
+</body>
+
+</html>
