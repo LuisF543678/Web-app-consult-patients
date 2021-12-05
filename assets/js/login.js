@@ -16,7 +16,10 @@ function showPassword() {
 
 }
 
-
 function signup() {
     location.href = "../patient-registration/sign-up.html";
+}
+
+function login() {
+    location.href = "../admin-dashboard/context/client/client-patient.html"
 }
