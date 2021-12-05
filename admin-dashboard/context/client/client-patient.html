@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - paciente</title>
     <link rel="stylesheet" href="../../../assets/css/menu.css">
-    <link rel="stylesheet" href="../../../assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="../../../assets/css/mdb.min.css"/>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 </head>
 
 <body>
@@ -16,11 +18,11 @@
         <ul>
             <li class="timeline">Historial </li>
             <hr>
-            <li class="events">Eventos</li>
+            <li class="events" data-mdb-toggle="modal" data-mdb-target="#exampleModal">Eventos</li>
             <hr>
-            <li class="calendar">Calendario</li>
+            <li class="calendar" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">Calendario</li>
             <hr>
-            <li class="settings">Configuración</li>
+            <li class="settings" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">Configuración</li>
             <hr>
             <a href="../../../authentication-section/login.html">
                 <li class="logout">Cerrar sesión</li>
@@ -43,7 +45,8 @@
                     <div class="card-body">
                         <img src="../../../assets/img/meetlogo.png" class="img-fluid rounded" alt="" />
                         <h5 class="card-title"> Enlace disponible </h5>
-                        <a href="#" class="btn btn-primary" onclick="meet()">Iniciar consulta <img class="loading" src="https://ps.w.org/notificationx/assets/icon-256x256.gif" alt=""></a>
+                        <a href="#" class="btn btn-primary" onclick="meet()">Iniciar la consulta<img class="loading"
+                                src="https://ps.w.org/notificationx/assets/icon-256x256.gif" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -52,7 +55,8 @@
                     <div class="card-body">
                         <img src="../../../assets/img/zoomlogo.png" class="img-fluid rounded" alt="" />
                         <h5 class="card-title">...</h5>
-                        <a href="#" class="btn btn-primary">Esperando...<img class="loading" src="https://support.lenovo.com/esv4/images/loading.gif" alt=""></a>
+                        <a href="#" class="btn btn-primary">Esperando enlace<img class="loading"
+                                src="https://support.lenovo.com/esv4/images/loading.gif" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -64,12 +68,94 @@
                     <div class="card-body">
                         <img src="../../../assets/img/teamslogo.png" class="img-fluid rounded" alt="" />
                         <h5 class="card-title">...</h5>
-                        <a href="#" class="btn btn-primary">Esperando... <img class="loading" src="https://support.lenovo.com/esv4/images/loading.gif" alt=""></a>
+                        <a href="#" class="btn btn-primary">Esperando enlace <img class="loading"
+                                src="https://support.lenovo.com/esv4/images/loading.gif" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eventos o consultas próximas</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">Aún no hay eventos disponibles
+                    <div class="">
+                        <img src="https://assets.website-files.com/5d9ba0eb5f6edb77992a99d0/5de7d2474cdb984b60db1a1c_valentine-email.gif"
+                            alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Calendario</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="">
+                        <strong>No hay fechas disponibles</strong>
+                        <img class="calendar"
+                            src="https://icalendario.net/media/imprimir/2021/mensual/diciembre/calendario-diciembre-2021.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Configuración</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="">
+                        <div class="modal-body mx-3">
+                            <div class="md-form mb-5">
+                              <i class="fas fa-envelope prefix grey-text"></i>
+                              <input type="email" id="defaultForm-email1" class="form-control validate">
+                              <label data-error="wrong" data-success="right" for="defaultForm-email1">Nuevo correo electrónico</label>
+                            </div>
+            
+                            <div class="md-form mb-4">
+                              <i class="fas fa-lock prefix grey-text"></i>
+                              <input type="password" id="defaultForm-pass1" class="form-control validate">
+                              <label data-error="wrong" data-success="right" for="defaultForm-pass1">Nueva contraseña</label>
+                            </div>
+            
+                          </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+                        Guardar cambios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../../../assets/js/menu.js"></script>
     <script type="text/javascript" src="../../../assets/js/mdb.min.js"></script>
     <script type="text/javascript" src="../../../assets/js/mdb.min.js"></script>
