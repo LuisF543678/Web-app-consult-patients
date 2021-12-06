@@ -23,3 +23,7 @@ function signup() {
 function login() {
     location.href = "../admin-dashboard/context/client/client-patient.html"
 }
+
+function registerDoctor() {
+    location.href = "../doctor-registration/sign-up.html"
+}
