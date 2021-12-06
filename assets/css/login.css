@@ -4,7 +4,7 @@
 
 body {
     background-color:#eeeeee8c !important;
-    background-image: url('https://blackdoctorsusa.com/assets/images/health-insurance.png');
+    background-image: url('https://ouch-cdn2.icons8.com/L2WDrm4XifIRwKihddzmdl-D3Ev48DOivUVF4pIFywU/rs:fit:784:1187/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzQ4/LzhhNGQ1MzQ2LTMw/YWMtNDhhNS04YzRh/LTdkMjVlNjIyNDJj/YS5zdmc.png');
 }
 
 #login {
@@ -113,4 +113,9 @@ body {
 }
 #footer a {
     color: inherit;
+}
+
+.doctorimg{
+    width: 60px;
+    height: auto;
 }

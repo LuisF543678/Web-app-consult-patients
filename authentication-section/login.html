@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="form-wrap">
-                        <h1 class="text-dark">Inicia sesión con tu correo y contraseña</h1>
+                        <h1 class="text-dark">Inicia sesión</h1>
                         <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
@@ -46,10 +46,17 @@
                         </form>
                         <br>
                         <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">¿Olvidó su contraseña?</a>
+                        <br>
+                        <a onclick="registerDoctor()" type="button" id="btn-login"
+                                class="btn btn-secondary btn-lg btn-block">¿Eres médico? <img class="doctorimg" src="https://media.giphy.com/avatars/CaroFitness/nbwhMd4XoMIn.gif" alt="">
+                            </a>
                     </div>
+                    
                 </div>
+                
             </div>
         </div>
+
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../assets/js/login.js"></script>
