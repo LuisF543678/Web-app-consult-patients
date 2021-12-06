@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  function meet(url, title, w, h) {
+  function settings(url, title, w, h) {
     var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
     var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
   
