@@ -76,3 +76,12 @@ span {
 a {
   font-size: 15px !important;
 }
+
+.input-group {
+  font-size:20px !important;
+}
+
+.form-control  {
+  min-height: calc(4.08rem + 2px) !important;
+  margin-bottom: 8px !important;
+}
