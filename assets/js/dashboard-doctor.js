@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  function settings(url, title, w, h) {
+  function meet(url, title, w, h) {
     var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
     var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
   
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     var left = ((width / 2) - (w / 2)) + dualScreenLeft;
     var top = ((height / 2) - (h / 2)) + dualScreenTop;
-    var newWindow = window.open('https://mi-salud-web.herokuapp.com/admin-dashboard/context/admin/settings/update-profile.html' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+    var newWindow = window.open('https://mi-salud-web.herokuapp.com/admin-dashboard/context/admin/settings/update-profile.html', 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
   
     // Puts focus on the newWindow  
     if (window.focus) {
